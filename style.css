@@ -1,0 +1,199 @@
+/*
+Theme Name:   ferrari_theme
+Description:  Just a few of the legendary artists icons helped define the music scene, pushing barriers and limits with their boundless, theatrical creativity.
+Author:       Kamil Draganek
+Author URI:   http://kamil.draganek.com
+Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  ferrari_theme
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/* header */
+
+header {
+  background-image: url("http://learning-wp-themesplugin.local/wp-content/uploads/2023/02/ferrari-360-g094603646_1920.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header-container {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+header button,
+main button,
+.main-container-posts-button {
+  /* background-color: Transparent; */
+  padding: 10px 15px;
+  font-size: 30px;
+  border: 2px solid black;
+}
+
+header button:hover,
+main button:hover,
+.main-container-posts-button:hover {
+  background-color: #fef02d;
+}
+
+header button a,
+main button a,
+.main-container-posts-button {
+  color: black;
+  text-decoration: none;
+}
+
+header button a:hover,
+main button a:hover,
+.main-container-posts-button a:hover {
+  color: #ab2e2b;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  align-items: flex-end;
+  font-size: 30px;
+  background-color: white;
+  opacity: 0.6;
+}
+
+li {
+  padding: 12px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  display: flex;
+  justify-content: right;
+}
+
+.navbar ul {
+  opacity: 1;
+}
+
+/* posts */
+
+.main-container-posts {
+  padding: 1%;
+  font-size: 20px;
+  margin: auto 100px;
+}
+.main-container-posts h3 {
+  text-decoration: overline;
+}
+
+.main-container-posts-button {
+  margin: 2% 0;
+}
+
+main h3 {
+  padding: 2% 0;
+  font-size: 32px;
+}
+
+.the-title {
+  font-size: 50px;
+  color: #ab2e2b;
+}
+
+.content-wrapper {
+  padding: 10px 25px;
+}
+
+.ongoing-models-container {
+  padding: 50px 20px;
+}
+
+/* Single post  */
+.single-title {
+  font-size: 40px;
+  text-align: center;
+  text-decoration: overline;
+}
+
+.container-flex-single-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-post-content {
+  padding: 3%;
+}
+
+.single-fields {
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+  border: 2px solid black;
+  margin: auto 10px;
+}
+
+.single-fields h4 {
+  font-size: 28px;
+  color: red;
+}
+
+.single-terms a {
+  color: red;
+}
+
+.being-produced {
+  margin-top: 3%;
+  font-weight: 400;
+  text-align: center;
+  font-size: 28px;
+}
+
+/* Footer */
+
+footer {
+  font-size: smaller;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Media */
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    font-size: 30px;
+  }
+  li {
+    padding: 10px;
+  }
+}
